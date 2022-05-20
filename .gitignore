@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# YouTube Data API
+client_secrets.json
+*-oauth2.json
