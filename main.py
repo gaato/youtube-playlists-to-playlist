@@ -8,7 +8,7 @@ from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
 from oauth2client.tools import argparser, run_flow
 
-from config import my_playlist_id, target_playlist_ids
+from config import my_playlist_id, target_playlist_ids, ignore_videos
 
 # The CLIENT_SECRETS_FILE variable specifies the name of a file that contains
 # the OAuth 2.0 information for this application, including its client_id and
@@ -83,6 +83,8 @@ my_playlist_items = get_items_from_playlist(my_playlist_id)
 for target_playlist_id in target_playlist_ids:
     items = get_items_from_playlist(target_playlist_id)
     for item in items:
+        if item in ignore_videos:
+            continue
         if item not in my_playlist_items:
             try:
                 response = youtube.playlistItems().insert(
