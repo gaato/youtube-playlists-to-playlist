@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 
 import httplib2
 from googleapiclient.discovery import build
@@ -8,7 +9,7 @@ from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
 from oauth2client.tools import argparser, run_flow
 
-from config import my_playlist_id, target_playlist_ids, ignore_videos
+from config import my_playlist_id, target_playlist_ids
 
 # The CLIENT_SECRETS_FILE variable specifies the name of a file that contains
 # the OAuth 2.0 information for this application, including its client_id and
@@ -78,14 +79,36 @@ def get_items_from_playlist(playlist_id):
     return result
 
 
+def get_durations_from_videos(video_ids):
+    result = {}
+    for i in range(0, len(video_ids), 50):
+        query = youtube.videos().list(
+            part="contentDetails",
+            id=','.join(video_ids[i: i + 50]),
+            maxResults=50
+        )
+        response = query.execute()
+        for item in response["items"]:
+            result[item["id"]] = item["contentDetails"]["duration"]
+    return result
+
+
+def is_less_than_10min(duration):
+    if "H" in duration:
+        return False
+    if "M" not in duration:
+        return True
+    m = re.search(r'(\d+)M', duration)
+    return int(m.group(1)) < 10
+
+
 my_playlist_items = get_items_from_playlist(my_playlist_id)
 
 for target_playlist_id in target_playlist_ids:
     items = get_items_from_playlist(target_playlist_id)
-    for item in items:
-        if item in ignore_videos:
-            continue
-        if item not in my_playlist_items:
+    durations = get_durations_from_videos(items)
+    for id, duration in durations.items():
+        if id not in my_playlist_items and is_less_than_10min(duration):
             try:
                 response = youtube.playlistItems().insert(
                     part="snippet",
@@ -93,14 +116,14 @@ for target_playlist_id in target_playlist_ids:
                         "snippet": {
                             "playlistId": my_playlist_id,
                             "resourceId": {
-                                "videoId": item,
+                                "videoId": id,
                                 "kind": "youtube#video"
                             }
                         }
                     }
                 ).execute()
             except HttpError as e:
-                print(item, e)
+                print(id, e)
             else:
                 print(f"{response['snippet']['title']} を追加しました")
 

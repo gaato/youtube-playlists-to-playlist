@@ -6,7 +6,7 @@ target_playlist_ids = (
     # ときのそら
     "PL_0A0t0-Y0AMGFPCuKDZ3o8PMVpKcNvOQ",
     # ロボ子さん
-    "PLF54qiUa9cTu9eyx3Ukx88jtJUCKGFvWL", # 3Dライブを含む(未対処)
+    "PLF54qiUa9cTu9eyx3Ukx88jtJUCKGFvWL", # 3Dライブ、歌枠を含む
     # さくらみこ
     "PLMF8NocLqJtubiccXUm9SCZ79dDPSLq2B",
     # 星街すいせい
@@ -48,7 +48,7 @@ target_playlist_ids = (
     "PL3y-e0n6k6gDoG3mViEOESGV1WhY8aCrR", # カバー
     # 戌神ころね
     "PLI3I4eCwIlMhCknbIPWKu9ZM60t0_WiAP", # オリジナル曲
-    # "PLI3I4eCwIlMi4odNVCWL-UekHfNZvAPYp", # 歌枠を含むが除外するとカバーが入れられないので要検討
+    "PLI3I4eCwIlMi4odNVCWL-UekHfNZvAPYp", # 歌枠を含む
     # 兎田ぺこら
     "PL9jli3ZqRhJD13ORC2CUTEYnjeZt9KMPb",
     # 不知火フレア
@@ -92,8 +92,4 @@ target_playlist_ids = (
     "PLi6TWx3pTf1dHW-DvMpPEW2NLDICBkW8z", # カバー
     # 風真いろは
     # 再生リストはまだ無さそう
-)
-
-ignore_videos = (
-    "mhvHZpK-9Ss", # 大空スバル３周年
 )
