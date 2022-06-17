@@ -6,7 +6,7 @@ target_playlist_ids = (
     # ときのそら
     "PL_0A0t0-Y0AMGFPCuKDZ3o8PMVpKcNvOQ",
     # ロボ子さん
-    "PLF54qiUa9cTu9eyx3Ukx88jtJUCKGFvWL",
+    "PLF54qiUa9cTu9eyx3Ukx88jtJUCKGFvWL", # 3Dライブを含む(未対処)
     # さくらみこ
     "PLMF8NocLqJtubiccXUm9SCZ79dDPSLq2B",
     # 星街すいせい
@@ -79,8 +79,21 @@ target_playlist_ids = (
     "PLrQwEkvx5phi8umsHZd-VKAKZ1XZ_7OCy",
     # 尾丸ポルカ
     "PLWGY2acU-ZeTnH4EvPHYEcqCUx145dDUP",
+    # ラプラス・ダークネス
+    "PL-ksV7rAwJHWfgsi38uZEsWpnY128WwBC",
+    # 鷹嶺ルイ
+    "PLD992QYJ2953ekTB3YuoHcF505PWPXlwb", # カバー
+    # 博衣こより
+    "PLCxKJRIVDrYGj0YDIsYX7ujs4eN467lJl", # オリジナル曲
+    "PLCxKJRIVDrYHVk6OfBsuGwIujL63ooOQV", # カバー(ソロ)
+    "PLCxKJRIVDrYFg33j7wh8HIDXD2TLQu_1C", # カバー(コラボ)
+    # 沙花叉クロヱ
+    "PLi6TWx3pTf1eY8ddPPh454GhIW5CHVrBT", # オリジナル曲
+    "PLi6TWx3pTf1dHW-DvMpPEW2NLDICBkW8z", # カバー
+    # 風真いろは
+    # 再生リストはまだ無さそう
 )
 
 ignore_videos = (
-    'mhvHZpK-9Ss', # 大空スバル３周年
+    "mhvHZpK-9Ss", # 大空スバル３周年
 )
