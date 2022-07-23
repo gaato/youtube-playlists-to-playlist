@@ -3,6 +3,8 @@ my_playlist_id = "PL0Dc_rBvxTTWg1LYKt0Aq6EtnXkRyuL8H"
 target_playlist_ids = (
     # hololive IDOL PROJECT
     "PL1NeGg1woXqkTks79_kSoxBrEKloB9SrI",
+
+    # JP
     # ときのそら
     "PL_0A0t0-Y0AMGFPCuKDZ3o8PMVpKcNvOQ",
     # ロボ子さん
@@ -91,5 +93,56 @@ target_playlist_ids = (
     "PLi6TWx3pTf1eY8ddPPh454GhIW5CHVrBT", # オリジナル曲
     "PLi6TWx3pTf1dHW-DvMpPEW2NLDICBkW8z", # カバー
     # 風真いろは
-    # 再生リストはまだ無さそう
+    "PLUfQ3xz0-Jen7EoEDeZAkl5yVuBdtw-Wl", # カバー(ソロ)
+    "PLUfQ3xz0-JemBHsJIHPvt0ZTb7YpuwzYm", # カバー(コラボ)
+
+    # ID
+    # "PLl62IkfhHtN5kDBdmZ96EisueppHSZmbi", TODO: 重複が生まれるのを調査する
+    # Ayunda Risu
+    "PLHeIKIUgnbJDhs2mTJ6WFXUvol189G7IK", # オリジナル曲
+    "PLHeIKIUgnbJBzW9cvaqSG6P9_NvXldgCH", # カバー
+    # Moona Hoshinova
+    "PLdcktSYecSKfeQ7p5CrVO4avrmLzSL8mt",
+    # Airani Iofifteen
+    "PL0OWyC-pOgQnQ1POfg1fOiXffUPE-b3sR", # カバー
+    # Kureiji Ollie
+    "PL6DI34hJswwQ8um3dpgrZY1elCO-tNfrc",
+    # Anya Melfissa
+    "PLuRWkjIMjanEVABxsKoHeDrRDXsMf1dbE", # カバー
+    "PLuRWkjIMjanELNZZKByiHY61vz3Kaf95l", # with holoID
+    # Pavolia Reine
+    "PLrALGrrF-6IWBHB3pdou530lFKrSsCtD4", # オリジナル曲
+    "PLrALGrrF-6IVnnurSv7Nxdxpo5zJmmjnC", # カバー
+    # Vestia Zeta
+    # まだなさそう
+    # Kaela Kovalskia
+    # まだなさそう
+    # Kobo Kanaeru
+    "PLwtTNsTyL23S4MNl0-gdozd769CytE_9X",
+
+    # EN
+    # Mori Calliope
+    "PLB8Nt5W7hnKA_pG2qljWbgVmJPobrLTm4",
+    # Takanashi Kiara
+    "PLsAbCDORf2yRA9TvFeQkVXnSHdghrfNuH",
+    # Ninomae Ina'nis
+    "PLQZecHYc3j2plhVMu0squPpD4XRoQmX-y",
+    # Gawr Gura
+    "PL9781Kn53ls8W4FWSottjwLx4aW6THK8N", # オリジナル曲
+    "PL9781Kn53ls9iSV-Kl-Gxk7X5VKeeNzoX", # カバー
+    # Watson Amelia
+    # ない？
+    # IRyS
+    "PLpBqtLy3mHw07nf_D8u-g6a3_MdLWVdIc", # オリジナル曲
+    "PLpBqtLy3mHw2Wlox1cPU2-WGM5VmMYR8m", # カバー
+    # Tsukumo Sana
+    # このチャンネルには再生リストが含まれていません。
+    # Ceres Fauna
+    # ない？
+    # Ouro Kronii
+    "PLh_mnrb4W5H6ir9_rwZomjr5SKhPqDf7y",
+    # Nanashi Mumei
+    "PL6IyOjey3U8WiUwXw-1AIDv99qMB9otjp",
+    # Hakos Baelz
+    "PLcPAszg2ItaGAkxKIUiTTtgekfmgMmmEQ",
 )
