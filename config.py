@@ -116,7 +116,7 @@ target_playlist_ids = (
     # Vestia Zeta
     # まだなさそう
     # Kaela Kovalskia
-    # まだなさそう
+    "PLH6DjTF_aCGjhddtGEEr7E1BApvg0EpIM",
     # Kobo Kanaeru
     "PLwtTNsTyL23S4MNl0-gdozd769CytE_9X",
 
